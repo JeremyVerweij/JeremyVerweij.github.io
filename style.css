@@ -1,0 +1,12 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a{
+    color: orange;
+    font-weight: bolder;
+}
+
+.websites{
+    margin: 100px;
+}
