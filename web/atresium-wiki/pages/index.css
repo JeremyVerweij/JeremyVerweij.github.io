@@ -1,0 +1,27 @@
+:root{
+    --headButtonWidth: calc(100% / 10);
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.headButton{
+    width: var(--headButtonWidth);
+    height: 100px;
+    display: inline-block;
+    background-color: rgb(190, 190, 190);
+    position: relative;
+    margin-right: -4.5px;
+    /*outline: 2px solid rgb(216, 216, 216);*/
+}
+
+.button:hover{
+    filter: brightness(110%);
+}
+
+#head{
+    margin-left: -8px;
+    margin-right: -8px;
+    margin-top: -8px;
+}
