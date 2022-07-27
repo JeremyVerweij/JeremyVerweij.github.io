@@ -13,10 +13,45 @@
             <h3 style="text-align: center; color: white;">Go back to main</h3>
         </div>
     </div>
-    <h1>Early Game</h1>
-    <h2>Manual Age</h2>
-    <h2>Rotational Age</h2>
-    <h2>Steam Age</h2>
+        <div class="dropdown">
+            <div class="dropdown display" id="early-game">
+                <h1 class="dropdownDisplay">Early Game</h1>
+            </div>
+            <div class="context" id="early-game-context" style="display: none;">
+                <div class="dropdown">
+                    <div class="dropdown display" id="manual-age">
+                        <h2 class="dropdownDisplay">Manual Age</h2>
+                    </div>
+                    <div id="manual-age-context" class="context" style="display: none;">
+                        <h3>The Manual Age</h3>
+                        <h4>The begining</h4>
+                        <p>In Atresium you start with gathering rocks, stick and plants.
+                            The (flint)rocks will need to be further processed by rightclicking them on a hard surface.
+                            The plants will also need to be further processed into plant balls and in to plant string/fiber.
+                            Once you've done all of that you can get some flint tools(axe, pickaxe, etc.)
+                        </p>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <div class="dropdown display" id="rotational-age">
+                        <h2 class="dropdownDisplay">Rotational Age</h2>
+                    </div>
+                    <div id="rotational-age-context" class="context" style="display: none;">
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <div class="dropdown display" id="steam-age">
+                        <h2 class="dropdownDisplay">Steam Age</h2>
+                    </div>
+                    <div id="steam-age-context" class="context" style="display: none;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!--div class="tooltip">Hover over me
+        <span class="tooltiptext">Tooltip text</span>
+    </div-->
 </body>
 <script src="index.js" defer></script>
+<script src="content.js" defer></script>
 </html>
