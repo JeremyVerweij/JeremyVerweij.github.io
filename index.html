@@ -14,9 +14,9 @@
         </div>
         <div style="margin-top: 7%;">
             <p style="text-align: center;">
-                <a class="websites" href="web/test/index.html">Test Website</a>
+                <a class="websites" href="web/atresium-download-page/index.html">Atresium download page</a>
                 <a class="websites" href="web/atresium-wiki/index.html">Atresium Wiki</a>
-                <a class="websites" href="web/test/index.html">Test Website</a>
+                <!--a class="websites" href="web/test/index.html">Test Website</a-->
             </p>
             <!--p style="text-align: center;">
                 <a class="websites" href="web/test/index.html">Test Website</a>
@@ -31,6 +31,8 @@
         </div>
     </body>
     <script>
-        console.log("hi");
+        var loc = window.location.pathname;
+        var dir = loc.substring(0, loc.lastIndexOf('/'));
+        localStorage.setItem("dir", dir);
     </script>
 </html>

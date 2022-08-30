@@ -1,5 +1,6 @@
 :root{
     --headButtonWidth: calc(100% / 10);
+    --headColor: rgb(145, 94, 94);
 }
 
 body{
@@ -10,11 +11,15 @@ body{
     width: var(--headButtonWidth);
     height: 100px;
     display: inline-block;
-    background-color: rgb(190, 190, 190);
+    background-color: var(--headColor);
     position: relative;
     margin-right: -4.5px;
     cursor: pointer;
     /*outline: 2px solid rgb(216, 216, 216);*/
+}
+
+#head{
+    background-color: var(--headColor);
 }
 
 .button:hover{
