@@ -1,0 +1,58 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    overflow: hidden;
+    margin: 0;
+}
+
+header{
+    background-color: orange;
+    margin: -10px;
+}
+
+img.pixel{
+    image-rendering: pixelated;
+    image-rendering: crisp-edges;
+}
+
+header img#backBTN{
+    width: 100px;
+    height: 100px;
+    margin-bottom: -40px;
+    cursor: grab;
+    margin-left: 20px;
+    margin-right: 10px;
+}
+
+header img#logo{
+    width: 350px;
+    height: 45px;
+    margin-bottom: -40px;
+    margin-left: 20px;
+    margin-right: 10px;
+    position: relative;
+    top: -55px;
+}
+
+.inline{
+    display: inline;
+}
+
+img {  
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+ }
+
+canvas {
+   margin-left: 10px;
+   margin-top: 20px;
+   width: 1000px;
+   height: 650px;
+   image-rendering: -moz-crisp-edges;
+   image-rendering: -webkit-crisp-edges;
+   image-rendering: pixelated;
+   image-rendering: crisp-edges;
+   background-color: black;
+}
