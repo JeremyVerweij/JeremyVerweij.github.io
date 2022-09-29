@@ -18,8 +18,8 @@ header img#backBTN{
     width: 100px;
     height: 100px;
     margin-bottom: -40px;
-    cursor: grab;
-    margin-left: 20px;
+    cursor: pointer;
+    margin-left: 25px;
     margin-right: 10px;
 }
 
@@ -45,14 +45,10 @@ img {
     -ms-user-select: none;
  }
 
-canvas {
+#game {
    margin-left: 10px;
    margin-top: 20px;
    width: 1000px;
    height: 650px;
-   image-rendering: -moz-crisp-edges;
-   image-rendering: -webkit-crisp-edges;
-   image-rendering: pixelated;
-   image-rendering: crisp-edges;
    background-color: black;
 }
