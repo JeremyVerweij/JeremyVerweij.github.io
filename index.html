@@ -1,38 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Website</title>
-        <link rel="shortcut icon" href="https://jeremyverweij.github.io/img/icon.png"/>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <div style="background-color: orange; width: 110%; position: fixed; left: -5%; top: 0px; height: 10%;">
-            <h1 style="text-align: center;">All Jeremy's websites</h1>
-        </div>
-        <div style="margin-top: 7%;">
-            <p style="text-align: center;">
-                <a class="websites" href="web/atresium-download-page/index.html">Atresium download page</a>
-                <a class="websites" href="web/atresium-wiki/index.html">Atresium Wiki</a>
-                <a class="websites" href="web/GrindCraft-redo/index.html">GrindCraft redo</a>
-            </p>
-            <!--p style="text-align: center;">
-                <a class="websites" href="web/test/index.html">Test Website</a>
-                <a class="websites" href="web/test/index.html">Test Website</a>
-                <a class="websites" href="web/test/index.html">Test Website</a>
-            </p>
-            <p style="text-align: center;">
-                <a class="websites" href="web/test/index.html">Test Website</a>
-                <a class="websites" href="web/test/index.html">Test Website</a>
-                <a class="websites" href="web/test/index.html">Test Website</a>
-            </p-->
-        </div>
-    </body>
-    <script>
-        var loc = window.location.pathname;
-        var dir = loc.substring(0, loc.lastIndexOf('/'));
-        localStorage.setItem("dir", dir);
-    </script>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeremy Verweij's github page</title>
+    <link rel="stylesheet" href="style/main.css">
+    <link rel="shortcut icon" href="icon.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <h1>Jeremy Verweij's his repositories</h1>
+    </header>
+    <main>
+        <nav id="links"></nav>
+    </main>
+</body>
+<script src="./js/display_repos.js"></script>
 </html>
