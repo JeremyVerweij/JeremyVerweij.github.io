@@ -8,9 +8,14 @@ request.onload = function() {
         const element = data[o];        
         var tmp = document.createElement("a");
         var tmp2 = element.full_name;
-        tmp2 = tmp2.replace("JeremyVerweij", "https://JeremyVerweij.github.io");
-        tmp.href = tmp2;
-        tmp2 = tmp2.replace("https://JeremyVerweij.github.io/", "")
+        if(element.has_pages){
+            tmp2 = tmp2.replace("JeremyVerweij", "https://JeremyVerweij.github.io");
+            tmp.href = tmp2;
+            tmp2 = tmp2.replace("https://JeremyVerweij.github.io/", "")
+        }else{
+            tmp.href = element.html_url;
+            tmp2 = tmp2.replace("JeremyVerweij/", "");
+        }
         tmp.innerHTML = tmp2;
         links.appendChild(tmp);
     }
