@@ -1,11 +1,13 @@
-var links = document.getElementById("links");
+// var links = document.getElementById("links");
 var request = new XMLHttpRequest();
+const main = document.getElementsByTagName("main")[0];
 
 request.open('GET','https://api.github.com/users/jeremyverweij/repos' , true)
 request.onload = function() {
     var data = JSON.parse(this.response);
     for (let o = 0; o < data.length; o++) {
-        const element = data[o];        
+        const element = data[o];
+
         var tmp = document.createElement("a");
         var tmp2 = element.full_name;
         if(element.has_pages){
@@ -17,7 +19,7 @@ request.onload = function() {
             tmp2 = tmp2.replace("JeremyVerweij/", "");
         }
         tmp.innerHTML = tmp2;
-        links.appendChild(tmp);
+        main.appendChild(tmp);
     }
 }
 request.send();
